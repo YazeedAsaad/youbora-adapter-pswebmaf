@@ -1,0 +1,60 @@
+{
+  "_from": "youbora-adapter-pswebmaf",
+  "_id": "youbora-adapter-pswebmaf@6.5.1",
+  "_inBundle": false,
+  "_integrity": "sha512-kurTr5zOCzwqVwQ/YexFpfyopCy2AxdISQsNTB36s9Bk7hoH32KMxx35Nz/aD0zWf5y9/Cz6yI7DvoK4fGlVBA==",
+  "_location": "/youbora-adapter-pswebmaf",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "youbora-adapter-pswebmaf",
+    "name": "youbora-adapter-pswebmaf",
+    "escapedName": "youbora-adapter-pswebmaf",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/youbora-adapter-pswebmaf/-/youbora-adapter-pswebmaf-6.5.1.tgz",
+  "_shasum": "b5075ebd407365fa8a4574c73bdef3dc4994f97d",
+  "_spec": "youbora-adapter-pswebmaf",
+  "_where": "D:\\Shahid",
+  "author": {
+    "name": "Jesus Lopez"
+  },
+  "bugs": {
+    "email": "support@nicepeopleatwork.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "youboralib": "^6.5.19"
+  },
+  "deprecated": false,
+  "description": "Youbora adapter for pswebmaf",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "youboralib-util": "1.4.x"
+  },
+  "homepage": "https://bitbucket.org/npaw/pswebmaf-adapter-js#readme",
+  "license": "MIT",
+  "main": "src/adapter.js",
+  "name": "youbora-adapter-pswebmaf",
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/npaw/pswebmaf-adapter-js.git"
+  },
+  "scripts": {
+    "build": "npm run manifest && webpack -p",
+    "clean": "rm -rf dist deploy manifest.json",
+    "deployable": "npm run build && youbora-util deployable",
+    "manifest": "youbora-util manifest",
+    "preversion": "npm run build",
+    "watch": "npm run manifest && webpack -p --progress --color --watch"
+  },
+  "version": "6.5.1"
+}

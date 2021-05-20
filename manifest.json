@@ -1,0 +1,28 @@
+{
+  "name": "pswebmaf",
+  "type": "adapter",
+  "tech": "js",
+  "author": "Jesus Lopez",
+  "version": "6.5.1",
+  "built": "2019-11-05",
+  "repo": "https://bitbucket.org/npaw/pswebmaf-adapter-js",
+  "libVersion": "^6.5.19",
+  "features": {
+    "buffer": "native",
+    "seek": "native",
+    "error": true,
+    "stop": true,
+    "pause": true,
+    "resume": true,
+    "getters": [
+      "getPlayhead",
+      "getDuration",
+      "getBitrate",
+      "getThroughput",
+      "getRendition",
+      "getResource",
+      "getPlayerVersion"
+    ]
+  },
+  "ads": []
+}
